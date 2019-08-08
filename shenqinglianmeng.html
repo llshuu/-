@@ -1,0 +1,700 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script type="text/javascript" src="js/fenye2.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="js/area.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/childcommon.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
+<script type="text/javascript" src="js/index.js" ></script>
+</head>
+
+<link type="text/css" rel="stylesheet" href="css/common.css">
+<link type="text/css" rel="stylesheet" href="css/shenqinglianmeng.css">
+<link type="text/css" rel="stylesheet" href="css/zhaoshangjiameng.css">
+<body>
+<!--头部 start-->
+<div class="TOP" id="top"> 
+   <!--top-->
+   <div class="top w1200">
+      <p class="top1"><span id="cityName" class="red1">新乡市</span><span id="countyName">原阳县</span><a href="javascript:;" data-reveal-id="myModal">[切换]</a></p>
+      <div class="fr">
+         <div class="YC fl">
+            <p class="xl"> 
+               <a href="javascript:;" class="ddl">登录</a> 
+               <span class="login"> 
+               		<span class="yhm"><input type="text" value="用户名/手机号码" / ></span> 
+                    <span class="mm"><input type="password" placeholder="密码"  /></span> 
+                    <span class="yzm"><input type="text" value="验证码" /><img src="images/image/yzm.jpg" /><a href="#">换一个</a></span> 
+                    <span class="zd"><label><input type="checkbox" /><span>自动登录</span></label><a href="忘记密码.html" class="wjmm">忘记密码?</a></span>
+                    <span class="tsxx">*用户名不能为空</span>
+                    <span class="login1"><a href="javascript:;">登录</a></span>
+                </span>
+            </p>	
+            <p><a href="注册页面.html" target="_blank">注册</a></p>
+         </div>
+         <p class="top2 fl"><a href="#">消息(0)</a><a href="免费开店.html" target="_blank">免费开店</a><a href="#" target="_blank">便民宝</a><a href="#" target="_blank">便民网</a></p>
+         <div class="wzdt fr">
+        	  <p><a href="网站地图.html" target="_blank">网站地图</a></p>
+              <div class="wzdt-list">
+                 <div class="first">
+                    <h2>便民网</h2>
+                    <h3><a href="#">三农服务</a><a href="#">便民服务</a><a href="#">便民工具</a><a href="#">供求自贸</a><a href="#">聚焦祥符</a><a href="#">交友</a><a href="#">爱心帮</a><a href="#">农博士</a><a href="#">金融超市</a></h3>
+                 </div>
+                 <div>
+                    <h2>商贸城</h2>
+                    <h3><a href="同城店index.html">同城店</a><a href="找厂家index.html">找厂家</a><a href="特卖会index.html">特卖会</a><a href="逛团购index.html">逛团购</a><a href="地方特产index.html">地方特产</a><a href="生鲜市场index.html">生鲜市场</a></h3>
+                 </div>
+                 <div>
+                    <h2>信息港</h2>
+                    <h3><a href="#">港站新闻</a><a href="#">团购活动</a><a href="#">指数信息站</a><a href="#">港站风采</a><a href="#">招商加盟</a><a href="#">关于我们</a></h3>
+                 </div>
+                 <div>
+                 	<h2>信息站</h2>
+                    <h3><a href="#">团购动态</a><a href="#">最新团购</a></h3>
+                 </div>
+                 <div>
+                 <h2>联盟店</h2>
+                    <h3><a href="#">联盟分布</a><a href="#">招商加盟</a><a href="#">所有联盟店</a><a href="#">申请联盟店</a></h3>
+                 </div>
+                 <div>
+                 <h2>合作社</h2>
+                    <h3><a href="#">农机</a><a href="#">养殖</a><a href="#">种植</a><a href="#">林业</a><a href="#">渔业</a><a href="#">畜牧业</a></h3>
+                 </div>
+                 <div style="border-right:none;">
+                 <h2>服务通</h2>
+                    <h3><a href="#">美丽乡村</a><a href="#">新闻专题</a><a href="#">雷锋墙</a><a href="#">健康教育</a><a href="#">旅游文化</a><a href="#">城乡三农</a></h3>
+                 </div>
+             </div>
+         </div>
+      </div>
+   </div>
+   <!--区域切换弹出层-->
+   <div id="myModal" class="reveal-modal area">
+      <div class="title1">县域商城，一键直达；本地企业，最近服务；同城保障，放心消费！</div>
+      <div id="pro">
+         <h1>省份：</h1>
+         <span onClick="switchArea(this)">河南省</span><span onClick="switchArea(this)">江西省</span><span onClick="switchArea(this)">山西省</span> <span onClick="switchArea(this)">辽宁省</span><span onClick="switchArea(this)">吉林省</span><span onClick="switchArea(this)">黑龙江省</span> <span onClick="switchArea(this)">江苏省</span><span onClick="switchArea(this)">浙江省</span><span onClick="switchArea(this)">安徽省</span> <span onClick="switchArea(this)">福建省</span><span onClick="switchArea(this)">山东省</span><span onClick="switchArea(this)">河北省</span> <span onClick="switchArea(this)">湖北省</span><span onClick="switchArea(this)">湖南省</span><span onClick="switchArea(this)">广东省</span> <span onClick="switchArea(this)">海南省</span><span onClick="switchArea(this)">四川省</span><span onClick="switchArea(this)">贵州省</span> <span onClick="switchArea(this)">云南省</span><span onClick="switchArea(this)">陕西省</span><span onClick="switchArea(this)">甘肃省</span> <span onClick="switchArea(this)">青海省</span><span onClick="switchArea(this)">台湾省</span><span onClick="switchArea(this)">北京市</span> <span onClick="switchArea(this)">天津市</span><span onClick="switchArea(this)">重庆市</span><span onClick="switchArea(this)">上海市</span> <span onClick="switchArea(this)">内蒙古自治区</span><span onClick="switchArea(this)">广西壮族自治区</span><span onClick="switchArea(this)">宁夏回族自治区</span> <span onClick="switchArea(this)">新疆维吾尔自治区</span><span onClick="switchArea(this)">西藏自治区</span><span onClick="switchArea(this)">香港特别行政区</span> <span onClick="switchArea(this)">澳门特别行政区</span></div>
+      <div id="city">
+         <h1>市域：</h1>
+         <span onClick="switchArea(this)">郑州市</span><span onClick="switchArea(this)">开封市</span><span onClick="switchArea(this)">洛阳市</span> <span onClick="switchArea(this)">平顶山市</span><span onClick="switchArea(this)">安阳市</span><span onClick="switchArea(this)">鹤壁市</span> <span onClick="switchArea(this)">新乡市</span><span onClick="switchArea(this)">焦作市</span><span onClick="switchArea(this)">濮阳市</span> <span onClick="switchArea(this)">许昌市</span><span onClick="switchArea(this)">漯河市</span><span onClick="switchArea(this)">三门峡市</span> <span  onClick="switchArea(this)">南阳市</span><span onClick="switchArea(this)">商丘市</span><span onClick="switchArea(this)">信阳市</span> <span onClick="switchArea(this)">周口市</span><span onClick="switchArea(this)">驻马店市</span><span onClick="switchArea(this)">济源市</span> </div>
+      <div id="county">
+         <h1>县区：</h1>
+         <span onClick="switchArea(this)">宛城区</span><span onClick="switchArea(this)">卧龙区</span><span onClick="switchArea(this)">南召县</span> <span onClick="switchArea(this)">方城县</span><span onClick="switchArea(this)">西峡县</span><span onClick="switchArea(this)">镇平县</span> <span onClick="switchArea(this)">内乡县</span><span onClick="switchArea(this)">淅川县</span><span onClick="switchArea(this)">社旗县</span> <span onClick="switchArea(this)">唐河县</span><span onClick="switchArea(this)">新野县</span><span onClick="switchArea(this)">桐柏县</span> <span onClick="switchArea(this)">邓州市</span>
+         <div class="go fl"><a href="javaScript:subSwitch()">切&nbsp;&nbsp;换</a></div>
+      </div>
+      <a class="close-reveal-modal">×</a> </div>
+   <div class="content_mark"></div>
+</div>
+<div class="header">
+   <div class="head w1200">
+      <div class="logo fl" ><a href="index.html"><img src="images/logo.png" /></a></div>
+      <div class="search fl">
+         <input class="txt fl" value="请输入商品或品牌" type="text"  />
+         <a href="商品列表-搜索结果.html">
+         <input class="btn fl" value="搜索" name="" type="button" /></a> 
+         </div>
+   </div>
+</div>
+<!--nav-->
+<div class="nav">
+	<div class="menu">
+      <div class="Menu">
+         <h2><a href="javascript:;">
+         	<div class="nav-f">
+       				 <div class="nav-fb">全部分类</div><div class="nav-fr"></div>
+			</div></a></h2>
+         <!--所有分类 Start-->
+         <div class="wrap wrap1">
+            <div class="all-sort-list">
+               <div class="item">
+                  <h3 > <img src="images/icon2.png" /> <span> <a href="商品列表.html">食品</a><a href="商品列表.html">特产</a><a href="商品列表.html">酒水</a><a href="商品列表.html">饮料</a><a href="商品列表.html">粮油</a><a href="商品列表.html">果蔬</a> </span> </h3>
+                  <div class="item-list">
+                     <div class="subitem">
+                        <dl class="fore1">
+                           <dt><a href="商品列表.html">休闲食品</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">薯片</a><a href="商品列表.html">薯条</a><a href="商品列表.html">肉松</a><a href="商品列表.html">米果</a><a href="商品列表.html">爆米花</a><a href="商品列表.html">虾条/虾片</a><a href="商品列表.html">豆干/素食</a><a href="商品列表.html">其他膨化食品</a><a href="商品列表.html">小食</a><a href="商品列表.html">禽类小食</a><a href="商品列表.html">肉类零食</a><a href="商品列表.html">海味小食</a> </dd>
+                        </dl>
+                        <dl class="fore2">
+                           <dt><a href="商品列表.html">坚果炒货</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">核桃</a><a href="商品列表.html">瓜子</a><a href="商品列表.html">花生</a><a href="商品列表.html">豆类炒货</a><a href="商品列表.html">其他坚果</a><a href="商品列表.html">腰果</a><a href="商品列表.html">杏仁</a> </dd>
+                        </dl>
+                        <dl class="fore3">
+                           <dt><a href="商品列表.html">糖果巧克力</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">布丁</a><a href="商品列表.html">润喉糖</a><a href="商品列表.html">口香糖</a><a href="商品列表.html">果冻</a><a href="商品列表.html">巧克力</a><a href="商品列表.html">糖果</a> </dd>
+                        </dl>
+                        <dl class="fore4">
+                           <dt><a href="商品列表.html">饼干糕点</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">饼干</a><a href="商品列表.html">蛋黄派/巧克力派</a><a href="商品列表.html">零食饼干</a><a href="商品列表.html">沙琪玛</a><a href="商品列表.html">面包/面包干</a><a href="商品列表.html">肉松饼</a><a href="商品列表.html">蛋糕</a><a href="商品列表.html">威化</a><a href="商品列表.html">曲奇</a><a href="商品列表.html">其他糕点</a><a href="商品列表.html">蛋卷</a><a href="商品列表.html">凤梨酥</a> </dd>
+                        </dl>
+                        <dl class="fore5">
+                           <dt><a href="商品列表.html">果脯蜜饯</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">葡萄干</a><a href="商品列表.html">蜜饯</a><a href="商品列表.html">山楂制品</a><a href="商品列表.html">话梅</a><a href="商品列表.html">枣类</a> </dd>
+                        </dl>
+                        <dl class="fore6">
+                           <dt><a href="商品列表.html">地方特产</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">新疆</a><a href="商品列表.html">北京</a><a href="商品列表.html">山西</a><a href="商品列表.html">河南</a><a href="商品列表.html">湖南</a><a href="商品列表.html">四川</a><a href="商品列表.html">云南</a><a href="商品列表.html">东北</a><a href="商品列表.html">其他特产</a> </dd>
+                        </dl>
+                        <dl class="fore7">
+                           <dt><a href="商品列表.html">酒水</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">白酒</a><a href="商品列表.html">啤酒</a><a href="商品列表.html">黄酒</a><a href="商品列表.html">葡萄酒</a><a href="商品列表.html">洋酒</a><a href="商品列表.html"> 滋补酒/保健酒</a><a href="商品列表.html">其他酒</a> </dd>
+                        </dl>
+                        <dl class="fore8">
+                           <dt><a href="商品列表.html">饮料</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">植物蛋白饮料</a><a href="商品列表.html">碳酸饮料</a><a href="商品列表.html">茶饮料</a><a href="商品列表.html">水</a><a href="商品列表.html">乳饮品</a><a href="商品列表.html">功能饮料</a><a href="商品列表.html">果蔬汁</a> </dd>
+                        </dl>
+                        <dl class="fore9">
+                           <dt><a href="商品列表.html">牛奶乳品</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">纯牛奶</a><a href="商品列表.html">儿童奶</a><a href="商品列表.html">酸奶</a><a href="商品列表.html">含乳饮料</a><a href="商品列表.html">风味奶</a> </dd>
+                        </dl>
+                        <dl class="fore10">
+                           <dt><a href="商品列表.html">水果</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">仁果类</a><a href="商品列表.html">核果类</a><a href="商品列表.html">坚果类</a><a href="商品列表.html">浆果类</a><a href="商品列表.html">柑橘类</a><a href="商品列表.html">热带及亚热带果类</a><a href="商品列表.html">什果类</a> </dd>
+                        </dl>
+                        <dl class="fore11">
+                           <dt><a href="商品列表.html">粮油干货</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">大米</a><a href="商品列表.html">杂粮</a><a href="商品列表.html">玉米油</a><a href="商品列表.html">花生油</a><a href="商品列表.html">葵花籽油</a><a href="商品列表.html">南北干货</a><a href="商品列表.html">食用油</a><a href="商品列表.html">面粉</a> </dd>
+                        </dl>
+                        <dl class="fore12">
+                           <dt><a href="商品列表.html">厨房调味</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">辣酱</a><a href="商品列表.html">调味汁</a><a href="商品列表.html">调味酱</a><a href="商品列表.html">糖</a><a href="商品列表.html">醋</a><a href="商品列表.html">盐</a><a href="商品列表.html">酱油</a><a href="商品列表.html">味精/鸡精</a><a href="商品列表.html">巧克力酱</a><a href="商品列表.html">花生酱/果酱</a><a href="商品列表.html">调味油</a> </dd>
+                        </dl>
+                        <dl class="fore13">
+                           <dt><a href="商品列表.html">方便速食</a><span>></span></dt>
+                           <dd class="last"> <a href="商品列表.html">面制品</a><a href="商品列表.html">方便面</a><a href="商品列表.html">八宝粥</a><a href="商品列表.html">火腿肠</a><a href="商品列表.html">酱菜/泡菜</a><a href="商品列表.html">罐头食品</a><a href="商品列表.html">速食粉丝/米线</a><a href="商品列表.html">常温熟食</a><a href="商品列表.html">其它速食食品</a> </dd>
+                        </dl>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <h3 class="one"> <img src="images/icon3.png" /> <span><a href="商品列表.html">日用百货</a><a href="商品列表.html">美妆</a><a href="商品列表.html">护肤</a></span> </h3>
+                  <div class="item-list">
+                     <div class="subitem">
+                        <dl class="fore1">
+                           <dt><a href="商品列表.html">居家日用</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">扇子</a><a href="商品列表.html">毛巾</a><a href="商品列表.html">浴巾</a><a href="商品列表.html">口罩</a><a href="商品列表.html">隔音耳塞</a><a href="商品列表.html">竹炭包</a><a href="商品列表.html">眼罩</a><a href="商品列表.html">夏季凉拖</a><a href="商品列表.html">居家鞋</a><a href="商品列表.html">夏季清凉</a> </dd>
+                        </dl>
+                        <dl class="fore2">
+                           <dt><a href="商品列表.html">应季百货</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">湿巾</a><a href="商品列表.html">晴雨伞</a><a href="商品列表.html">驱蚊灯</a><a href="商品列表.html">驱蚊液</a><a href="商品列表.html">冰格</a><a href="商品列表.html">保鲜产品</a><a href="商品列表.html">密封罐</a><a href="商品列表.html">防潮制品</a><a href="商品列表.html">电扇/冰垫</a><a href="商品列表.html">5元小物</a> </dd>
+                        </dl>
+                        <dl class="fore3">
+                           <dt><a href="商品列表.html">收纳整理</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">被子防尘袋</a><a href="商品列表.html">收纳盒</a><a href="商品列表.html">收纳袋</a><a href="商品列表.html">大衣/西服罩</a><a href="商品列表.html">护洗袋</a><a href="商品列表.html">收纳凳</a><a href="商品列表.html">鞋柜</a><a href="商品列表.html">置物架</a><a href="商品列表.html">桌用收纳</a><a href="商品列表.html">内衣收纳</a> </dd>
+                        </dl>
+                        <dl class="fore4">
+                           <dt><a href="商品列表.html">家用杂货</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">晒衣篮</a><a href="商品列表.html">晾衣杆</a><a href="商品列表.html">脏衣篮</a><a href="商品列表.html">衣架</a><a href="商品列表.html">家庭清洁剂</a><a href="商品列表.html">蓝泡泡</a><a href="商品列表.html">管道疏通器</a><a href="商品列表.html">塑胶手套</a><a href="商品列表.html">医药箱</a><a href="商品列表.html">垃圾袋</a> </dd>
+                        </dl>
+                        <dl class="fore5">
+                           <dt><a href="商品列表.html">厨房工具</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">餐具</a><a href="商品列表.html">锅具</a><a href="商品列表.html">刀具</a><a href="商品列表.html">炖锅</a><a href="商品列表.html">蒸锅</a><a href="商品列表.html">汤锅</a><a href="商品列表.html">煎锅</a><a href="商品列表.html">压力锅</a><a href="商品列表.html">炒锅</a><a href="商品列表.html">菜板砧板</a> </dd>
+                        </dl>
+                        <dl class="fore6">
+                           <dt><a href="商品列表.html">盆碗碟筷</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">一次性餐桌用品</a><a href="商品列表.html">酒杯酒具</a><a href="商品列表.html">咖啡器具</a><a href="商品列表.html">碗盘碟</a><a href="商品列表.html">刀叉勺</a><a href="商品列表.html">餐具瓷器套装</a><a href="商品列表.html">餐桌小物</a><a href="商品列表.html">饭盒</a><a href="商品列表.html">厨房储物</a> </dd>
+                        </dl>
+                        <dl class="fore7">
+                           <dt><a href="商品列表.html">茶具杯具</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">茶具</a><a href="商品列表.html">茶壶</a><a href="商品列表.html">飘逸杯</a><a href="商品列表.html">功夫茶杯</a><a href="商品列表.html">玻璃杯</a><a href="商品列表.html">杯垫</a><a href="商品列表.html">保温杯</a><a href="商品列表.html">马克杯</a><a href="商品列表.html">保温壶</a><a href="商品列表.html">情侣杯</a> </dd>
+                        </dl>
+                        <dl class="fore8">
+                           <dt><a href="商品列表.html">个人清洁</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">洗发护发</a><a href="商品列表.html">沐浴露</a><a href="商品列表.html">漱口水</a><a href="商品列表.html">洗手液</a><a href="商品列表.html">牙膏</a><a href="商品列表.html">纸巾</a><a href="商品列表.html">香皂</a><a href="商品列表.html">沐浴球/浴擦/浴刷</a><a href="商品列表.html">指甲刀</a> </dd>
+                        </dl>
+                        <dl class="fore9">
+                           <dt><a href="商品列表.html">清洁用品</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">生活用纸</a><a href="商品列表.html">衣物清洁护理</a><a href="商品列表.html">厨卫清洁</a><a href="商品列表.html">家居清洁</a><a href="商品列表.html">浴室用品</a><a href="商品列表.html">清洁用具</a> </dd>
+                        </dl>
+                        <dl class="fore10">
+                           <dt><a href="商品列表.html">清洁工具</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">剃须刮毛刀</a><a href="商品列表.html">沐浴球</a><a href="商品列表.html">浴室角架</a><a href="商品列表.html">浴帘杆</a><a href="商品列表.html">拖把</a><a href="商品列表.html">垃圾桶</a><a href="商品列表.html">梳子镜子</a><a href="商品列表.html">围裙</a><a href="商品列表.html">百洁布</a><a href="商品列表.html">海绵擦</a> </dd>
+                        </dl>
+                        <dl class="fore11">
+                           <dt><a href="商品列表.html">美容护肤</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">卸妆</a><a href="商品列表.html">面膜</a><a href="商品列表.html">洁面</a><a href="商品列表.html">防晒</a><a href="商品列表.html">面霜</a><a href="商品列表.html">爽肤水</a><a href="商品列表.html">眼霜</a><a href="商品列表.html">乳液</a> </dd>
+                        </dl>
+                        <dl class="fore12">
+                           <dt><a href="商品列表.html">彩妆</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">BB霜</a><a href="商品列表.html">粉底液</a><a href="商品列表.html">唇膏</a><a href="商品列表.html">隔离</a><a href="商品列表.html">遮瑕</a><a href="商品列表.html">指甲油</a><a href="商品列表.html">粉饼</a><a href="商品列表.html">彩妆套装</a> </dd>
+                        </dl>
+                        <dl class="fore13">
+                           <dt><a href="商品列表.html">香水精油</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">女士香水</a><a href="商品列表.html">男士香水</a><a href="商品列表.html">中性香水</a><a href="商品列表.html">淡香水</a><a href="商品列表.html">古龙水</a><a href="商品列表.html">香精</a><a href="商品列表.html">复方精油</a><a href="商品列表.html">香体乳</a> </dd>
+                        </dl>
+                        <dl class="fore14">
+                           <dt><a href="商品列表.html">美发造型</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">洗发水</a><a href="商品列表.html">护发素</a><a href="商品列表.html">染发</a><a href="商品列表.html">烫发</a><a href="商品列表.html">造型</a><a href="商品列表.html">假发</a><a href="商品列表.html">洗护套装</a><a href="商品列表.html">假发配件</a> </dd>
+                        </dl>
+                        <dl class="fore15">
+                           <dt><a href="商品列表.html">纤体塑身</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">美胸</a><a href="商品列表.html">纤体</a><a href="商品列表.html">胸部护理</a><a href="商品列表.html">身体护理</a><a href="商品列表.html">塑身</a><a href="商品列表.html">脱毛</a><a href="商品列表.html">手部保养</a><a href="商品列表.html">足部护理</a> </dd>
+                        </dl>
+                        <dl class="fore16">
+                           <dt><a href="商品列表.html">眼部彩妆</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">眼线</a><a href="商品列表.html">睫毛膏</a><a href="商品列表.html">眼影</a><a href="商品列表.html">眉笔</a><a href="商品列表.html">假睫毛</a><a href="商品列表.html">眼霜</a><a href="商品列表.html">双眼皮贴</a><a href="商品列表.html">眼部护理</a> </dd>
+                        </dl>
+                        <dl class="fore17">
+                           <dt><a href="商品列表.html">男士护理</a><span>></span></dt>
+                           <dd class="last"> <a href="商品列表.html">劲能醒肤</a><a href="商品列表.html">清洁面膜</a><a href="商品列表.html">男性主义</a><a href="商品列表.html">剃须膏</a><a href="商品列表.html">男士套装</a><a href="商品列表.html">男士防晒</a><a href="商品列表.html">火山岩</a><a href="商品列表.html">爽身走珠</a> </dd>
+                        </dl>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <h3 class="two"> <img src="images/icon4.png" /> <span><a href="商品列表.html">手机</a><a href="商品列表.html">数码</a></span> </h3>
+                  <div class="item-list">
+                     <div class="subitem">
+                        <dl class="fore1">
+                           <dt><a href="商品列表.html">手机</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">iphone</a><a href="商品列表.html">小米</a><a href="商品列表.html">华为</a><a href="商品列表.html">三星</a><a href="商品列表.html">魅族</a><a href="商品列表.html">纽扣</a><a href="商品列表.html">酷派</a><a href="商品列表.html">vivo</a> </dd>
+                        </dl>
+                        <dl class="fore2">
+                           <dt><a href="商品列表.html">平板</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">ipad</a><a href="商品列表.html">小米</a><a href="商品列表.html">三星</a><a href="商品列表.html">台电</a><a href="商品列表.html">蓝魔</a><a href="商品列表.html">华为</a> </dd>
+                        </dl>
+                        <dl class="fore3">
+                           <dt><a href="商品列表.html">电脑</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">DTY电脑</a><a href="商品列表.html">一体机</a><a href="商品列表.html">苹果</a><a href="商品列表.html">联想</a><a href="商品列表.html">Thinkpac</a><a href="商品列表.html">戴尔</a><a href="商品列表.html">华硕</a><a href="商品列表.html">Acer</a><a href="商品列表.html">神州</a><a href="商品列表.html">三星</a> </dd>
+                        </dl>
+                        <dl class="fore4">
+                           <dt><a href="商品列表.html">相机</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">单反</a><a href="商品列表.html">自拍神器</a><a href="商品列表.html">拍立得</a><a href="商品列表.html">佳能</a><a href="商品列表.html">微单</a><a href="商品列表.html">镜头</a><a href="商品列表.html">卡西欧</a><a href="商品列表.html">尼康</a> </dd>
+                        </dl>
+                        <dl class="fore5">
+                           <dt><a href="商品列表.html">数码配件</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">充电宝</a><a href="商品列表.html">智能穿戴</a><a href="商品列表.html">蓝牙耳机</a><a href="商品列表.html">iPhone6壳</a><a href="商品列表.html">电脑包</a><a href="商品列表.html">手机贴膜</a><a href="商品列表.html">手机壳套</a><a href="商品列表.html">三脚架</a><a href="商品列表.html">保护壳套</a><a href="商品列表.html">炫彩贴膜</a><a href="商品列表.html">移动电源</a><a href="商品列表.html">相机配件</a><a href="商品列表.html">手机零件</a><a href="商品列表.html">自拍神器</a><a href="商品列表.html">移动POS支付</a> </dd>
+                        </dl>
+                        <dl class="fore6">
+                           <dt><a href="商品列表.html">智能设备</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">儿童手表</a><a href="商品列表.html">Apple Watch</a><a href="商品列表.html">智能手表</a><a href="商品列表.html">智能手环</a><a href="商品列表.html">智能配饰</a><a href="商品列表.html">智能排插</a><a href="商品列表.html">智能眼镜</a> </dd>
+                        </dl>
+                        <dl class="fore7">
+                           <dt><a href="商品列表.html">电玩</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">游戏掌机</a><a href="商品列表.html">家用游戏机</a><a href="商品列表.html">游戏手柄</a><a href="商品列表.html">PS主机</a><a href="商品列表.html">PS主机配件</a><a href="商品列表.html">XBOX配件</a> </dd>
+                        </dl>
+                        <dl class="fore8">
+                           <dt><a href="商品列表.html">网络设备</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">路由器</a><a href="商品列表.html">网关</a><a href="商品列表.html">交换机</a><a href="商品列表.html">光纤设备</a><a href="商品列表.html">网络存储设备</a><a href="商品列表.html">无线上网卡</a><a href="商品列表.html">TP-LINK</a><a href="商品列表.html">小米路由器</a> </dd>
+                        </dl>
+                        <dl class="fore9">
+                           <dt><a href="商品列表.html">MP3/MP4</a><span>></span> </dt>
+                           <dd> <a href="商品列表.html">MP3</a><a href="商品列表.html">MP4</a><a href="商品列表.html">录音笔</a><a href="商品列表.html">索尼</a><a href="商品列表.html">飞利浦</a><a href="商品列表.html">ipod</a><a href="商品列表.html">爱国者</a><a href="商品列表.html">耳机</a> </dd>
+                        </dl>
+                        <dl class="fore10">
+                           <dt><a href="商品列表.html">存储</a><span>></span></dt>
+                           <dd class="last"> <a href="商品列表.html">U盘</a><a href="商品列表.html">闪存卡</a><a href="商品列表.html">记忆棒</a><a href="商品列表.html">移动硬盘</a><a href="商品列表.html">希捷</a><a href="商品列表.html">三星</a><a href="商品列表.html">Sandisk</a><a href="商品列表.html">金士顿</a> </dd>
+                        </dl>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <h3 class="one"> <img src="images/icon5.png" /> <span><a href="商品列表.html">服装</a><a href="商品列表.html">鞋子</a><a href="商品列表.html">箱包</a><a href="商品列表.html">配饰</a></span> </h3>
+                  <div class="item-list">
+                     <div class="subitem">
+                        <dl class="fore1">
+                           <dt><a href="商品列表.html">男装</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">T恤</a><a href="商品列表.html">衬衫</a><a href="商品列表.html">休闲裤</a><a href="商品列表.html">牛仔裤</a><a href="商品列表.html">短裤</a><a href="商品列表.html">西服</a><a href="商品列表.html">风衣</a><a href="商品列表.html">针织衫</a><a href="商品列表.html">毛衣</a><a href="商品列表.html">卫衣</a><a href="商品列表.html">皮衣</a><a href="商品列表.html">马甲</a><a href="商品列表.html">西裤</a><a href="商品列表.html">大衣</a><a href="商品列表.html">羽绒服</a> </dd>
+                        </dl>
+                        <dl class="fore2">
+                           <dt><a href="商品列表.html">女装</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">衬衫 </a><a href="商品列表.html">T恤</a><a href="商品列表.html">连衣裙</a><a href="商品列表.html">半身裙</a><a href="商品列表.html">西服</a><a href="商品列表.html">套装</a><a href="商品列表.html">马甲</a><a href="商品列表.html">打底裤</a><a href="商品列表.html">休闲裤</a><a href="商品列表.html">牛仔裤</a><a href="商品列表.html">羽绒服</a><a href="商品列表.html">大衣</a><a href="商品列表.html">棉衣</a><a href="商品列表.html">毛衣</a><a href="商品列表.html">卫衣</a><a href="商品列表.html">风衣</a><a href="商品列表.html">礼服/婚纱/旗袍</a><a href="商品列表.html">皮衣</a><a href="商品列表.html">短外套</a> </dd>
+                        </dl>
+                        <dl class="fore3">
+                           <dt><a href="商品列表.html">内衣</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">文胸</a><a href="商品列表.html">睡衣</a><a href="商品列表.html">背心/吊带/打底衫</a><a href="商品列表.html">内裤</a><a href="商品列表.html">袜子</a><a href="商品列表.html">保暖内衣</a> </dd>
+                        </dl>
+                        <dl class="fore4">
+                           <dt><a href="商品列表.html">配饰</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">腰带</a><a href="商品列表.html">眼镜</a><a href="商品列表.html">帽子</a><a href="商品列表.html">围巾</a><a href="商品列表.html">手套</a><a href="商品列表.html">领带</a><a href="商品列表.html">鞋垫</a> </dd>
+                        </dl>
+                        <dl class="fore5">
+                           <dt><a href="商品列表.html">男鞋</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">皮鞋</a><a href="商品列表.html">单鞋</a><a href="商品列表.html">休闲鞋</a><a href="商品列表.html">凉鞋/沙滩鞋</a><a href="商品列表.html">靴子</a><a href="商品列表.html">拖鞋</a> </dd>
+                        </dl>
+                        <dl class="fore6">
+                           <dt><a href="商品列表.html">女鞋</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">单鞋</a><a href="商品列表.html">休闲鞋</a><a href="商品列表.html">靴子</a><a href="商品列表.html">雪地靴</a><a href="商品列表.html">拖鞋</a><a href="商品列表.html">凉鞋</a> </dd>
+                        </dl>
+                        <dl class="fore7">
+                           <dt><a href="商品列表.html">功能箱包</a><span>></span></dt>
+                           <dd class="last"> <a href="商品列表.html">单肩包</a><a href="商品列表.html">双肩包</a><a href="商品列表.html">斜挎包</a><a href="商品列表.html">手提</a><a href="商品列表.html">钱包</a><a href="商品列表.html">手拿包</a><a href="商品列表.html">拉杆箱</a><a href="商品列表.html">电脑数码包</a><a href="商品列表.html">旅行包</a><a href="商品列表.html">腰包/胸包</a><a href="商品列表.html">书包</a><a href="商品列表.html">箱包配件</a> </dd>
+                        </dl>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <h3 class="one"> <img src="images/icon6.png" /><span><a href="商品列表.html">母婴</a><a href="商品列表.html">童鞋</a><a href="商品列表.html">童玩</a></span> </h3>
+                  <div class="item-list">
+                     <div class="subitem">
+                        <dl class="fore1">
+                           <dt><a href="商品列表.html">宝宝奶粉</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">英国牛栏</a><a href="商品列表.html">英国爱他美</a><a href="商品列表.html">美赞臣</a><a href="商品列表.html">雅培</a><a href="商品列表.html">澳洲爱他美</a><a href="商品列表.html">可瑞康</a><a href="商品列表.html">惠氏</a><a href="商品列表.html">贝因美</a> </dd>
+                        </dl>
+                        <dl class="fore2">
+                           <dt><a href="商品列表.html">婴童用品</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">推车</a><a href="商品列表.html">驱蚊器</a><a href="商品列表.html">婴儿床</a><a href="商品列表.html">理发器</a><a href="商品列表.html">奶瓶</a><a href="商品列表.html">餐椅</a><a href="商品列表.html">背带腰凳</a><a href="商品列表.html">安全座椅</a> </dd>
+                        </dl>
+                        <dl class="fore3">
+                           <dt><a href="商品列表.html">孕产必备</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">内衣</a><a href="商品列表.html">内裤</a><a href="商品列表.html">喂奶枕</a><a href="商品列表.html">收腹带</a><a href="商品列表.html">妈咪包</a><a href="商品列表.html">待产包</a><a href="商品列表.html">防辐射服</a><a href="商品列表.html">储奶袋</a> </dd>
+                        </dl>
+                        <dl class="fore4">
+                           <dt><a href="商品列表.html">辅食营养</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">米粉</a><a href="商品列表.html">肉松</a><a href="商品列表.html">磨牙棒</a><a href="商品列表.html">果泥</a><a href="商品列表.html">益生菌</a><a href="商品列表.html">清火开胃</a><a href="商品列表.html">钙铁锌</a><a href="商品列表.html">维生素</a> </dd>
+                        </dl>
+                        <dl class="fore5">
+                           <dt><a href="商品列表.html">纸尿裤</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">花王</a><a href="商品列表.html">moony</a><a href="商品列表.html">大王</a><a href="商品列表.html">帮宝适</a><a href="商品列表.html">雀氏</a><a href="商品列表.html">好奇</a><a href="商品列表.html">妈咪宝贝</a><a href="商品列表.html">安儿乐</a> </dd>
+                        </dl>
+                        <dl class="fore6">
+                           <dt><a href="商品列表.html">童装</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">T恤</a><a href="商品列表.html">连衣裙</a><a href="商品列表.html">泳装</a><a href="商品列表.html">套装</a><a href="商品列表.html">衬衫</a><a href="商品列表.html">防晒服</a><a href="商品列表.html">半身裙</a><a href="商品列表.html">短裤</a> </dd>
+                        </dl>
+                        <dl class="fore7">
+                           <dt><a href="商品列表.html">童鞋</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">凉鞋</a><a href="商品列表.html">沙滩鞋</a><a href="商品列表.html">洞洞鞋</a><a href="商品列表.html">网鞋</a><a href="商品列表.html">学步鞋</a><a href="商品列表.html">拖鞋</a><a href="商品列表.html">帆布鞋</a><a href="商品列表.html">宝宝鞋</a> </dd>
+                        </dl>
+                        <dl class="fore8">
+                           <dt><a href="商品列表.html">亲子鞋服</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">母女裙</a><a href="商品列表.html">父子装</a><a href="商品列表.html">亲子T恤</a><a href="商品列表.html">亲子衬衫</a><a href="商品列表.html">亲子套装</a><a href="商品列表.html">母女鞋</a><a href="商品列表.html">父子鞋</a><a href="商品列表.html">家庭鞋</a> </dd>
+                        </dl>
+                        <dl class="fore9">
+                           <dt><a href="商品列表.html">玩具</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">沙滩戏水</a><a href="商品列表.html">早教启蒙</a><a href="商品列表.html">拼插益智</a><a href="商品列表.html">遥控模型</a><a href="商品列表.html">运动户外</a><a href="商品列表.html">学习爱好</a><a href="商品列表.html">卡通公仔</a><a href="商品列表.html">亲子互动</a> </dd>
+                        </dl>
+                        <dl class="fore10">
+                           <dt><a href="商品列表.html">童车</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">电动车</a><a href="商品列表.html">自行车</a><a href="商品列表.html">学步车</a><a href="商品列表.html">手推车</a><a href="商品列表.html">三轮车</a><a href="商品列表.html">滑板车</a><a href="商品列表.html">扭扭车</a><a href="商品列表.html">儿童轮滑</a> </dd>
+                        </dl>
+                        <dl class="fore11">
+                           <dt><a href="商品列表.html">早教启蒙</a><span>></span></dt>
+                           <dd class="last"> <a href="商品列表.html">早教机</a><a href="商品列表.html">点读机</a><a href="商品列表.html">健身架</a><a href="商品列表.html">布书</a><a href="商品列表.html">串/绕珠</a><a href="商品列表.html">床/摇铃</a><a href="商品列表.html">爬行垫</a><a href="商品列表.html">木质拼图</a> </dd>
+                        </dl>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <h3> <img src="images/icon7.png" /> <span><a href="商品列表.html">家居</a><a href="商品列表.html">家纺</a><a href="商品列表.html">家电</a><a href="商品列表.html">家具</a><a href="商品列表.html">五金</a><a href="商品列表.html">建材</a></span> </h3>
+                  <div class="item-list">
+                     <div class="subitem">
+                        <dl class="fore1">
+                           <dt><a href="商品列表.html">床上用品</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">床品套件</a><a href="商品列表.html">凉席/凉枕</a><a href="商品列表.html">枕头/枕芯</a><a href="商品列表.html">被子</a><a href="商品列表.html">床垫/床褥</a><a href="商品列表.html">毯子</a><a href="商品列表.html">蚊帐</a> </dd>
+                        </dl>
+                        <dl class="fore2">
+                           <dt><a href="商品列表.html">时尚家饰</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">地垫</a><a href="商品列表.html">家装保护软饰</a><a href="商品列表.html">鲜花/花艺/花瓶</a><a href="商品列表.html">挂钟/闹钟</a> </dd>
+                        </dl>
+                        <dl class="fore3">
+                           <dt><a href="商品列表.html">家具</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">沙发</a><a href="商品列表.html">桌类</a><a href="商品列表.html">试衣镜</a><a href="商品列表.html">椅凳</a><a href="商品列表.html">柜类/架类</a><a href="商品列表.html">户外/庭院家具</a><a href="商品列表.html">儿童家具</a><a href="商品列表.html">床</a> </dd>
+                        </dl>
+                        <dl class="fore4">
+                           <dt><a href="商品列表.html">灯具</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">灯管/灯泡</a><a href="商品列表.html">手电筒/探照灯</a><a href="商品列表.html">小夜灯</a><a href="商品列表.html">装修灯饰</a><a href="商品列表.html">壁灯/射灯/筒灯</a><a href="商品列表.html">落地灯</a><a href="商品列表.html">吊灯</a><a href="商品列表.html">吸顶灯</a><a href="商品列表.html">阅读台灯</a> </dd>
+                        </dl>
+                        <dl class="fore5">
+                           <dt><a href="商品列表.html">厨房电器</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">豆浆机</a><a href="商品列表.html">微波炉</a><a href="商品列表.html">电压力锅</a><a href="商品列表.html">电饭煲</a><a href="商品列表.html">电热水壶</a><a href="商品列表.html">电磁炉</a><a href="商品列表.html">多用途锅</a><a href="商品列表.html">电饼档/煎烤机</a><a href="商品列表.html">料理/榨油机</a><a href="商品列表.html">煮蛋器</a><a href="商品列表.html">酸奶机</a><a href="商品列表.html">面包机</a><a href="商品列表.html">咖啡机</a> </dd>
+                        </dl>
+                        <dl class="fore6">
+                           <dt><a href="商品列表.html">生活家电</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">电扇</a><a href="商品列表.html">吸尘器</a><a href="商品列表.html">取暖器</a><a href="商品列表.html">加湿器</a><a href="商品列表.html">电熨斗</a><a href="商品列表.html">洗衣机</a><a href="商品列表.html">冰箱</a><a href="商品列表.html">电视机</a><a href="商品列表.html">空调</a> </dd>
+                        </dl>
+                        <dl class="fore7">
+                           <dt><a href="商品列表.html">小电器</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">电吹风</a><a href="商品列表.html">剃须刀</a><a href="商品列表.html">剃毛器/脱毛器</a><a href="商品列表.html">血压计</a><a href="商品列表.html">足浴盆</a><a href="商品列表.html">按摩椅</a><a href="商品列表.html">电子秤</a> </dd>
+                        </dl>
+                        <dl class="fore8">
+                           <dt><a href="商品列表.html">手动工具</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">扳手</a><a href="商品列表.html">夹持类工具</a><a href="商品列表.html">焊接喷涂</a><a href="商品列表.html">刀/剪</a><a href="商品列表.html">冲/撬棒</a><a href="商品列表.html">锤</a><a href="商品列表.html">凿</a><a href="商品列表.html">斧</a><a href="商品列表.html">锉</a><a href="商品列表.html">刨</a><a href="商品列表.html">锯</a><a href="商品列表.html">套筒及配件</a><a href="商品列表.html">工具包/箱/车</a><a href="商品列表.html">螺丝刀</a><a href="商品列表.html">旋具头</a><a href="商品列表.html">电子电工工具</a><a href="商品列表.html">汽修汽保工具</a> </dd>
+                        </dl>
+                        <dl class="fore9">
+                           <dt><a href="商品列表.html">电动工具</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">电钻</a><a href="商品列表.html">电锤</a><a href="商品列表.html">电锯</a><a href="商品列表.html">电刨</a><a href="商品列表.html">电剪</a><a href="商品列表.html">电锯片</a><a href="商品列表.html">切割机</a><a href="商品列表.html">雕刻机</a><a href="商品列表.html">抛光机</a><a href="商品列表.html">砂纸机</a><a href="商品列表.html">砂带机</a><a href="商品列表.html">电动刀头</a><a href="商品列表.html">热熔胶枪</a><a href="商品列表.html">电动扳手</a><a href="商品列表.html">电动螺丝刀</a><a href="商品列表.html">电动套丝机</a><a href="商品列表.html">电磨/角磨机</a> </dd>
+                        </dl>
+                        <dl class="fore10">
+                           <dt><a href="商品列表.html">机械五金</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">轴承</a><a href="商品列表.html">阀门</a><a href="商品列表.html">滑轮</a><a href="商品列表.html">传动件</a><a href="商品列表.html">滚筒/托锟</a><a href="商品列表.html">化工管道/配件</a> </dd>
+                        </dl>
+                        <dl class="fore11">
+                           <dt><a href="商品列表.html">气动工具</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">气稿</a><a href="商品列表.html">气锤</a><a href="商品列表.html">热风枪</a><a href="商品列表.html">气丁枪</a><a href="商品列表.html">吹风枪</a><a href="商品列表.html">气动元件</a><a href="商品列表.html">气动扳手</a><a href="商品列表.html">气铲/气锹</a><a href="商品列表.html">气动磨光机</a><a href="商品列表.html">气动螺丝刀</a><a href="商品列表.html">气动铆钉机</a><a href="商品列表.html">施工除尘器</a><a href="商品列表.html">气动棘轮扳手</a><a href="商品列表.html">气动冷压接钳</a> </dd>
+                        </dl>
+                        <dl class="fore12">
+                           <dt><a href="商品列表.html">家用五金</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">锁具</a><a href="商品列表.html">家具五金</a><a href="商品列表.html">门用配件</a><a href="商品列表.html">合页</a><a href="商品列表.html">窗用配件</a><a href="商品列表.html"> 绳/链/钩</a> </dd>
+                        </dl>
+                        <dl class="fore13">
+                           <dt><a href="商品列表.html">卫浴用品</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">浴室柜</a><a href="商品列表.html">普通马桶</a><a href="商品列表.html">花洒套装</a><a href="商品列表.html">一体智能马桶</a><a href="商品列表.html">智能马桶盖板</a><a href="商品列表.html">淋浴房</a><a href="商品列表.html">面盆龙头</a><a href="商品列表.html">地漏</a><a href="商品列表.html">五金挂件</a><a href="商品列表.html">浴霸</a> </dd>
+                        </dl>
+                        <dl class="fore14">
+                           <dt><a href="商品列表.html">墙纸</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">PVC墙纸        </a><a href="商品列表.html">无纺布墙纸</a><a href="商品列表.html">纯纸墙纸</a><a href="商品列表.html">墙布</a><a href="商品列表.html">沙粒墙纸</a><a href="商品列表.html">绒面墙纸</a><a href="商品列表.html">定制壁画</a><a href="商品列表.html">3D墙纸</a> </dd>
+                        </dl>
+                        <dl class="fore15">
+                           <dt><a href="商品列表.html">地板</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">实木地板</a><a href="商品列表.html">实木复合地板</a><a href="商品列表.html">强化复合地板</a><a href="商品列表.html">竹地板</a><a href="商品列表.html">户外地板</a><a href="商品列表.html">PVC地板</a><a href="商品列表.html">防静电地板</a><a href="商品列表.html">防潮膜</a><a href="商品列表.html">踢脚线</a><a href="商品列表.html">地板龙骨</a> </dd>
+                        </dl>
+                        <dl class="fore16">
+                           <dt><a href="商品列表.html">瓷砖</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">仿古砖</a><a href="商品列表.html">釉面砖</a><a href="商品列表.html">玻化砖</a><a href="商品列表.html">微晶石</a><a href="商品列表.html">抛晶砖</a><a href="商品列表.html">通体砖</a><a href="商品列表.html">花片</a><a href="商品列表.html">瓷砖背景墙</a> </dd>
+                        </dl>
+                        <dl class="fore17">
+                           <dt><a href="商品列表.html">电子电工</a><span>></span></dt>
+                           <dd class="last"> <a href="商品列表.html">插座</a><a href="商品列表.html">开关</a><a href="商品列表.html">电线</a><a href="商品列表.html">监控器材</a><a href="商品列表.html">智能家居</a><a href="商品列表.html">防盗报警器材</a><a href="商品列表.html">消防报警设备</a><a href="商品列表.html">接线板插头</a><a href="商品列表.html">布线箱</a><a href="商品列表.html">断路器</a> </dd>
+                        </dl>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <h3 class="one"> <img src="images/icon8.png" /> <span><a href="商品列表.html">代步工具</a><a href="商品列表.html">车配</a></span> </h3>
+                  <div class="item-list">
+                     <div class="subitem">
+                        <dl class="fore1">
+                           <dt><a href="商品列表.html">独轮车</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">儿童用</a><a href="商品列表.html">初学者用</a><a href="商品列表.html">训练和刷街</a><a href="商品列表.html">自由式竞技</a><a href="商品列表.html">攀登越野</a><a href="商品列表.html">公路式</a> </dd>
+                        </dl>
+                        <dl class="fore2">
+                           <dt><a href="商品列表.html">两轮车</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">自行车</a><a href="商品列表.html">二轮电动车</a><a href="商品列表.html">自平衡两轮车</a><a href="商品列表.html">二轮摩托车</a> </dd>
+                        </dl>
+                        <dl class="fore3">
+                           <dt><a href="商品列表.html">三轮车</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">电动三轮车</a><a href="商品列表.html">摩托三轮车</a> </dd>
+                        </dl>
+                        <dl class="fore4">
+                           <dt><a href="商品列表.html">四轮车</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">客车</a><a href="商品列表.html">轿车</a><a href="商品列表.html">越野车</a><a href="商品列表.html">四轮电动车</a> </dd>
+                        </dl>
+                        <dl class="fore5">
+                           <dt><a href="商品列表.html">车配</a><span>></span></dt>
+                           <dd class="last"> <a href="商品列表.html">车灯</a><a href="商品列表.html">车闸</a><a href="商品列表.html">车架</a><a href="商品列表.html">车座</a><a href="商品列表.html">车把</a><a href="商品列表.html">轮胎</a><a href="商品列表.html">电机</a><a href="商品列表.html">脚蹬</a><a href="商品列表.html">方向盘</a><a href="商品列表.html">火花塞</a><a href="商品列表.html">制动器</a><a href="商品列表.html">手刹</a><a href="商品列表.html">碟刹</a><a href="商品列表.html">刹车油</a><a href="商品列表.html">玻璃水</a><a href="商品列表.html">冷冻剂</a><a href="商品列表.html">润滑油</a> </dd>
+                        </dl>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <h3 class="two Two"> <img src="images/icon9.png" /> <span><a href="商品列表.html">农资</a><a href="商品列表.html">农机</a></span> </h3>
+                  <div class="item-list">
+                     <div class="subitem">
+                        <dl class="fore1">
+                           <dt><a href="商品列表.html">农肥</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">氮肥</a><a href="商品列表.html">钾肥</a><a href="商品列表.html">磷肥</a><a href="商品列表.html">复合肥</a><a href="商品列表.html">有机肥</a><a href="商品列表.html">叶面肥</a><a href="商品列表.html">冲施肥</a> </dd>
+                        </dl>
+                        <dl class="fore2">
+                           <dt><a href="商品列表.html">农药</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">除草剂</a><a href="商品列表.html">杀虫剂</a><a href="商品列表.html">杀菌剂</a><a href="商品列表.html">脱叶剂</a><a href="商品列表.html">杀鼠剂</a><a href="商品列表.html">生长素</a><a href="商品列表.html">缩节胺</a><a href="商品列表.html">多效唑</a> </dd>
+                        </dl>
+                        <dl class="fore3">
+                           <dt><a href="商品列表.html">农膜</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">大棚膜</a><a href="商品列表.html">蔬菜膜</a><a href="商品列表.html">灌浆膜</a><a href="商品列表.html">农用地膜</a><a href="商品列表.html">西瓜专用膜</a><a href="商品列表.html">葡萄专用膜</a><a href="商品列表.html">花卉专用膜</a><a href="商品列表.html">水产专用膜</a><a href="商品列表.html">草莓专用膜</a><a href="商品列表.html">农用黑色除草地膜</a><a href="商品列表.html">农用双色地膜</a> </dd>
+                        </dl>
+                        <dl class="fore4">
+                           <dt><a href="商品列表.html">种子</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">药材</a><a href="商品列表.html">大豆</a><a href="商品列表.html">小麦</a><a href="商品列表.html">棉花</a><a href="商品列表.html">玉米</a><a href="商品列表.html">大米</a><a href="商品列表.html">番茄</a><a href="商品列表.html">茄子</a><a href="商品列表.html">萝卜</a><a href="商品列表.html">白菜</a><a href="商品列表.html">辣椒</a><a href="商品列表.html">南瓜</a><a href="商品列表.html">西瓜</a><a href="商品列表.html">冬瓜</a><a href="商品列表.html">西葫芦</a> </dd>
+                        </dl>
+                        <dl class="fore5">
+                           <dt><a href="商品列表.html">种苗</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">花卉 </a><a href="商品列表.html">杨树</a><a href="商品列表.html">梨树</a><a href="商品列表.html">核桃树</a><a href="商品列表.html">枣树</a><a href="商品列表.html">杏树</a><a href="商品列表.html">柿子树</a><a href="商品列表.html">桐树</a><a href="商品列表.html">柏树</a><a href="商品列表.html">脱壳机</a> </dd>
+                        </dl>
+                        <dl class="fore6">
+                           <dt><a href="商品列表.html">农机</a><span>></span></dt>
+                           <dd> <a href="商品列表.html">拖拉机</a><a href="商品列表.html">装卸机</a><a href="商品列表.html">耕地机</a><a href="商品列表.html">旋耕机</a><a href="商品列表.html">播种机</a><a href="商品列表.html">插秧机</a><a href="商品列表.html">施肥机</a><a href="商品列表.html">地膜机</a><a href="商品列表.html">除草机</a><a href="商品列表.html">割草机</a><a href="商品列表.html">收割机</a><a href="商品列表.html">脱粒机</a><a href="商品列表.html">榨油机</a><a href="商品列表.html">打面机</a><a href="商品列表.html">轧花机</a><a href="商品列表.html">打杆机</a><a href="商品列表.html">粉碎机</a><a href="商品列表.html">制粒机</a><a href="商品列表.html">搅拌机</a><a href="商品列表.html">封口机</a><a href="商品列表.html">打捆机</a><a href="商品列表.html">脱壳机</a> </dd>
+                        </dl>
+                        <dl class="fore7">
+                           <dt><a href="商品列表.html">农具</a><span>></span></dt>
+                           <dd class="last"> <a href="商品列表.html">铁锨</a><a href="商品列表.html">镰刀</a><a href="商品列表.html">锄头</a><a href="商品列表.html">筛子</a><a href="商品列表.html">簸箕</a><a href="商品列表.html">扬叉</a><a href="商品列表.html">喷雾器</a> </dd>
+                        </dl>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--所有分类 End--> 
+         </div>
+      </div>
+      <ul>
+         <li class="first"><a href="index.html">首页</a></li>
+         <li  ><a href="lianmengfenbu.html">联盟分布</a></li>
+         <li><a href="zhaoshangjiameng.html">招商加盟</a></li>
+        
+         <li class="kkk"><a href="shenqinglianmeng.html" target="_blank" class="shenqing" ></a></li>
+      </ul>
+   </div>
+</div>
+<!--main-->
+<div class="main-k">
+   <div class="open_bg">
+	<div class="biaot"></div>
+     <div class="set w1200" >
+      
+     
+      
+      <div class="set_con">
+        <h2><em>*</em>注册号：</h2>
+        <p><input type="text" value="请输入您的注册号" class="name"/></p>
+      </div>
+       <div class="set_con">
+        <h2><em>*</em>企业名称：</h2>
+        <p><input type="text" value="请输入您的企业名称" class="name"/></p>
+      </div>
+       <div class="set_con">
+        <h2><em>*</em>法人：</h2>
+        <p><input type="text" value="法人名称" class="name"/></p>
+      </div>
+       <div class="set_con">
+        <h2><em>*</em>经营范围：</h2>
+        <p><input type="text" value="经营范围" class="name"/></p>
+      </div>
+      <div class="set_con">
+        <h2><em>*</em>经营期限：</h2>
+        <p><input type="text" class="name"/></p>
+      </div>
+       <div class="set_con">
+        <h2><em>*</em>联系地址：</h2>
+        <ul class="sort1 searchcon">
+          <li class="box"> 
+            <span>河南省</span>
+            <ul class="son_ul">
+              <li>河北省</li>
+              <li>山西省</li>
+              <li>辽宁省</li>
+              <li>吉林省</li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="sort1 searchcon">
+          <li class="box"> 
+            <span>新乡市</span>
+            <ul class="son_ul">
+              <li>郑州市</li>
+              <li>南阳市</li>
+              <li>信阳市</li>
+              <li>安阳市</li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="sort1 searchcon">
+          <li class="box box2"> 
+            <span>原阳县</span>
+            <ul class="son_ul">
+              <li>延津县</li>
+              <li>封丘县</li>
+              <li>长垣县</li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="sort1 searchcon">
+          <li class="box box2"> 
+            <span>原武镇</span>
+            <ul class="son_ul">
+              <li>龙源街道办事处</li>
+              <li>阳和街道办事处</li>
+              <li>原兴街道办事处</li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="sort1 searchcon">
+          <li class="box box2"> 
+            <span>南关村</span>
+            <ul class="son_ul">
+              <li>白塔村</li>
+              <li>师徐庄村</li>
+              <li>小村</li>
+            </ul>
+          </li>
+        </ul>
+        <p><input type="text" value="请填写您的详细地址" class="write"/></p>
+      </div>
+      <div class="biaot2"></div>
+      <div class="set_con">
+        <h2><em>*</em>申请人姓名：</h2>
+        <p><input type="text" class="text"/></p>
+      </div>
+      <div class="set_con">
+        <h2><em>*</em>性别：</h2>
+        <p><input type="radio" name="sex" class="sex"/>男<input type="radio" name="sex" class="sex sex2"/>女</p>
+      </div>
+      <div class="set_con">
+        <h2><em>*</em>联系方式：</h2>
+        <p><input type="text" class="tel"/></p>
+      </div>
+      <div class="set_con">
+        <h2><em>*</em>身份证号码：</h2>
+        <p><input type="text" class="num"/></p>
+      </div>
+  
+      <div class="set_con">
+        <h2><em>*</em>身份证：</h2>
+        <div class="card_box">
+      		
+          <div>
+            <p><img src="images/open-id1.jpg">手持身份证照片<input type="button" onClick="f.click()"/ value="上传"><input type="file" id="f"  class="files"  size="1" hidefocus></p>
+            <h3><span>示例：</span><img src="images/open-id2.jpg"></h3>
+          </div>
+          <div>
+            <p><img src="images/open-id3.jpg">身份证正面<input type="button" onClick="f.click()"/ value="上传"><input type="file"   class="files"  size="1" hidefocus></p>
+            <h3><span>示例：</span><img src="images/open-id4.jpg"></h3>
+          </div>
+          <div class="the">
+            <p><img src="images/open-id5.jpg">身份证反面<input type="button" onClick="f.click()"/ value="上传"><input type="file"  class="files"  size="1" hidefocus></p>
+            <h3><span>示例：</span><img src="images/open-id6.jpg"></h3>
+          </div>
+          <div class="the" id="dwk">
+            <p><img src="images/yingye.png" style="width:300px;height:200px"><input type="button" onClick="f.click()"/ value="上传照片"><input type="file"  class="files"  size="1" hidefocus></p>
+            
+          </div>
+        </div>
+      </div>
+     
+      
+      <div class="set_con set_agr">
+        <p><input type="checkbox" class="agr"/>提交<a href="#" class="deal">《加盟协议》</a></p>
+      </div>
+      <div class="set_con set_agr">
+        <p><a href="#" class="me">我要开店</a></p>
+      </div>
+    </div>   
+</div>
+</div>
+
+
+<!-----公共底部 start---->
+<div class="bot_tit">
+   <ul>
+      <li><span>正</span>正规渠道&nbsp;正品保证</li>
+      <li><span>多</span>品类齐全&nbsp;轻松购物</li>
+      <li><span>值</span>产地直供&nbsp;原汁原味</li>
+      <li><span>省</span>天天低价&nbsp;畅选无忧</li>
+   </ul>
+</div>
+<div class="bot_con">
+   <ul>
+      <li><a href="#" class="bt">用户指南</a ><a href="#">注册应用</a><a href="#">找回密码</a><a href="#">便民宝</a></li>
+      <li><a href="#" class="bt">订单交易</a ><a href="#">交易流程</a><a href="#">财务安全</a><a href="#">支付方式</a><a href="#">我要退单</a></li>
+      <li><a href="#" class="bt">联盟店</a ><a href="#">申请流程</a><a href="#">我要加入</a><a href="#">资质认证</a><a href="#">信息发布</a></li>
+      <li><a href="#" class="bt">合作社</a ><a href="#">申请流程</a><a href="#">我要加入</a><a href="#">资质认证</a><a href="#">信息发布</a></li>
+      <li><a href="#" class="bt">物流港</a ><a href="#">功能说明</a><a href="#">常见问题</a><a href="#">查找信息</a><a href="#">联系我们</a></li>
+      <li><a href="#" class="bt">信息站</a ><a href="#">申请流程</a><a href="#">我要加入</a><a href="#">资质认证</a><a href="#">信息发布</a></li>
+      <li><a href="#" class="bt">服务中心</a ><a href="#">售后政策</a><a href="#">价格保护</a><a href="#">联系客服</a></li>
+   </ul>
+</div>
+<div class="bot_tex">
+   <p><a href="#">城乡商贸城</a>|<a href="#">法律声明</a>|<a href="#">用户协议</a>|<a href="#">隐私安全</a>|<a href="#">友情链接</a>|<a href="#">投诉建议</a>|<a href="#">联系我们</a> </p>
+   <p>豫ICP备13021607号-17&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  ****备案&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  合作热线：0371-56087190</p>
+   <p>©2015&nbsp; &nbsp; &nbsp; 郑州市康途计算机科技有限公司&nbsp; &nbsp; &nbsp; 版权所有</p>
+</div>
+<!-----公共底部 end----> 
+
+</body>
+<!--banner js--> 
+<script type="text/javascript">
+	new Tab('.J_tab', { auto: true });
+	new Slide('.banner_box', { index: 1, effect: 'slide', firstDelay: 8 });
+</script>
+</html>
